@@ -1,0 +1,64 @@
+body{
+  background-color: #F7B617FF;
+  color: white;
+  box-sizing: border-box;
+
+}
+h2{
+  font-weight: bold;
+}
+.first-slide .content{
+  background-color: #F7B617FF;
+  color: #fff;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  margin-top: 15%;
+}
+.first-slide{
+  background-image: url(../images/taxi.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-position: 75% 92%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+
+}
+.o-bien::after, .o-bien::before{
+  content: " ";
+  display: inline-block;
+  width: 20%;
+  height: 0.1em;
+  background-color: #FFFFFF ;
+  margin: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.download-slide{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.download-slide .first-row{
+  border: 1px solid white;
+}
+.third-slide{
+  background-image: url(../images/conduce.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+
+}
+.driver{
+  background-color: rgba(0,0,0,0.6);
+  padding: 25% 7%;
+
+}
+.btn-driver{
+  background-color: #F7B617FF;
+  border: none;
+  color:white;
+}
+.tariff{
+  padding: 7% 0; 
+}
