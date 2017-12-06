@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- navigation bar-->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar bar  container-fluid navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -29,21 +29,49 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Viaja</a></li>
             <li><a href="#">Conduce</a></li>
-            <li><a href="#">Inicia Sesión</a></li>
+            <li data-toggle="modal" data-target="#inicio-sesion" ><a href="#">Inicia Sesión</a></li>
 
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </nav><!-- end of the navigation bar-->
+    </nav>
+    <!-- modal -->
+    <div class="modal fade" id="inicio-sesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="center-block img-responsive" id="perfil" src="./assets/images/perfil.jpg" alt="imagen de perfil">
+              </div>
+              <div class="modal-footer">
+                <div class="container-fluid">
+                  <div class="info-modal">
+                    <div class="user input-group">
+                      <span class="input-group-addon glyphicon glyphicon-user" id="sizing-addon2"></span>
+                      <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+                    </div>
+                    <div class="user input-group">
+                      <span class="input-group-addon glyphicon glyphicon-lock" id="sizing-addon2"></span>
+                      <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
+                    </div>
+                    <button class="btn btn-default center-block inicio" type="submit" data-toggle="modal" data-target="#registro">Sign In</button>
+                    <p class="forgot">Forgot password? <a href="#">Click here</a></p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- end of the navigation bar-->
      <!-- first slide -->
-     <section class="first-slide">
+     <section class="first-slide container-fluid">
        <div class="row">
          <div class="col-md-offset-7 col-md-5 col-sm-offset-3 col-sm-9 col-xs-offset-3 col-xs-9">
              <div class=" col-md-12 content">
                <h1>Disfruta del viaje <br>Eres el dueño de tu tiempo </h1>
                <p class="lead">Viaja con <span><img src="assets/images/logoBlanco.png" alt="LabCar"></p> </span>
 
-               <input type="button" class="btn btn-default btn-lg registrate" value="REGÍSTRATE">
+               <input data-toggle="modal" data-target="#registro" type="button" class="btn btn-default btn-lg registrate" value="REGÍSTRATE">
                <!-- Aqui va el separador -->
                <div class="col-md-12">
                  <p class="lead o-bien">o bien</p>
@@ -54,12 +82,63 @@
          </div>
        </div>
      </section>
+     <!-- inicio Modal registro-->
+        <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="head modal-header">
+                <button class="btn btn-default btn-registro center-block col-md-12" type="submit" data-toggle="modal" data-target="#registro">¿Ya tienes una cuenta?</button>
+                <p class="col-md-12">Ó CREA UNA CUENTA NUEVA</p>
+              </div>
+              <div class="md-body modal-body">
+                <div class="separacion input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="Nombre" aria-describedby="sizing-addon2">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="Apellido" aria-describedby="sizing-addon2">
+                </div>
+                <div class="separacion input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="youremail@mail.com" aria-describedby="sizing-addon2">
+                </div>
+                <div class="separacion input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="Teléfono" aria-describedby="sizing-addon2">
+                </div>
+                <div class="separacion input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2">
+                </div>
+                <div class="separacion input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="Ciudad" aria-describedby="sizing-addon2">
+                </div>
+                <div class="separacion input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="(Optional) Código de invitación" aria-describedby="sizing-addon2">
+                </div>
+                <div class="separacion input-group dropdown col-md-12">
+                  <button class="col-md-12 like" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">¿Cómo te enteraste de nosotros?
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Televisión</a></li>
+                    <li><a href="#">Diario</a></li>
+                  </ul>
+                </div>
+                <button class="separacion btn btn-default btn-enviar center-block col-md-12">ENVIAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin modal registro-->
      <!-- end of the first slide-->
      <!-- download slide -->
-     <section class="download-slide">
+     <section class="container-fluid download-slide">
 
        <div class="row ">
-         <div class="uno col-md-11 col-md-offset-1 col-sm-12  col-xs-12">
+         <div class="uno col-md-10 col-sm-12  col-xs-12">
            <div class="row first-row ">
              <div class="col-xs-12 col-sm-12 hidden-md hidden-lg "><h2>La nueva app</h2></div>
               <div class="row ">
@@ -78,7 +157,7 @@
      </section>
      <!-- end of the download slide-->
      <!-- third slide -->
-     <section class="third-slide">
+    <section class="third-slide container-fluid">
        <div class="row">
          <div class="col-md-offset-8 col-md-4 col-sm-offset-3 col-sm-9 col-xs-offset-3 col-xs-9">
              <div class=" col-md-12 driver">
@@ -91,7 +170,7 @@
      </section>
      <!-- end of the second slide-->
      <!-- tariff slide -->
-     <section class="tariff container">
+    <section class="tariff container container-fluid">
        <div class="row container">
          <div class=" container col-md-12 col-md-offset-1 col-sm-12  col-xs-12">
            <div class="row container">
@@ -122,7 +201,7 @@
      </section>
      <!-- end of the tariff slide-->
      <!-- footer slide -->
-     <footer>
+     <footer class="container-fluid">
       <div class="container">
         <div class="row">
           <div class="brand col-md-12">
@@ -165,7 +244,7 @@
             <a href="#"><img src="assets/images/appstore.png" alt=""></a>
             <a href="#"><img src="assets/images/enBadgeWebGeneric.png" alt=""></a>
           </div>
-          <!--only mobile  -->
+          <!-- only mobile -->
           <div class="list-second hidden-lg hidden-md col-sm-6 col-xs-6">
             <a href="http://www.fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>

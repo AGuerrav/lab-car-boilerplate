@@ -4,6 +4,10 @@ body{
   box-sizing: border-box;
 
 }
+.bar{
+  padding: 3% 0;
+  background-color: white;
+}
 h2{
   font-weight: bold;
 }
@@ -40,6 +44,7 @@ h2{
 }
 .download-slide .first-row{
   border: 1px solid white;
+  padding: 5% 0;
 }
 .third-slide{
   background-image: url(../images/conduce.jpg);
@@ -90,4 +95,7 @@ footer .row{
 }
 #img-list{
   padding-top: 30%;
+}
+.forgot{
+  color:black;
 }
