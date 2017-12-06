@@ -60,5 +60,34 @@ h2{
   color:white;
 }
 .tariff{
-  padding: 7% 0; 
+  padding: 7% 0;
+}
+.map{
+  border: 1px solid white;
+  text-align: center;
+  padding: 2%;
+}
+footer{
+  background-color: #2B2B2B;
+  padding: 5% 0;
+}
+footer .row{
+  border-bottom: 1px solid white;
+  padding-bottom: 2%;
+}
+.list-icons>a, .list-second>a, li>a{
+  color: white;
+  line-height: 3.5;
+}
+.list-icons{
+  padding-top: 33%;
+}
+.list-down{
+  padding-top: 23%;
+}
+#img-list img{
+  padding-top: 10%;
+}
+#img-list{
+  padding-top: 30%;
 }
