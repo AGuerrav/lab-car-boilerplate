@@ -9,19 +9,18 @@
     <link rel="stylesheet" href=".\assets\css\main.css">
   </head>
   <body>
-    <!-- navigation bar-->
     <nav class="navbar bar  container-fluid navbar-default navbar-fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only ">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img alt="Brand" src=".\assets\images\logoForma.png">
+            <img class="img-responsive" alt="Brand" src=".\assets\images\logoForma.png">
         </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -29,21 +28,21 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Viaja</a></li>
             <li><a href="#">Conduce</a></li>
-            <li data-toggle="modal" data-target="#inicia-sesion" ><a href="#">Inicia Sesión</a></li>
+            <li data-toggle="modal" data-target="#log-in" ><a href="#">Inicia Sesión</a></li>
 
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <!-- modal -->
-    <div class="modal fade" id="inicia-sesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- modal inicia sesion -->
+    <div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-body">
-                <img class="center-block" src="./assets/images/perfil.jpg" alt="imagen de perfil">
+                <img class="center-block img-responsive" src="./assets/images/perfil.jpg" alt="imagen de perfil">
               </div>
               <div class="modal-footer">
-                <div class="container-fluid">
+                <div class="container-fluid body-footer">
                   <div class="info-modal">
                     <div class="user input-group">
                       <span class="input-group-addon glyphicon glyphicon-user" id="sizing-addon2"></span>
@@ -53,8 +52,8 @@
                       <span class="input-group-addon glyphicon glyphicon-lock" id="sizing-addon2"></span>
                       <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
                     </div>
-                    <button class="btn btn-default center-block inicio" type="submit" data-toggle="modal" data-target="#registro">Sign In</button>
-                    <p class="forgot">Forgot password? <a href="#">Click here</a></p>
+                    <button class="btn btn-default center-block" type="">Log in</button>
+                    <p class="forgot text-center">Forgot password? <a href="#">Click here</a></p>
 
                   </div>
                 </div>
@@ -65,93 +64,140 @@
         <!-- fin modal -->
     <!-- end of the navigation bar-->
      <!-- first slide -->
-     <section class="first-slide container-fluid">
+    <section class="first-slide container-fluid">
        <div class="row">
          <div class="col-md-offset-7 col-md-5 col-sm-offset-3 col-sm-9 col-xs-offset-3 col-xs-9">
-             <div class=" col-md-12 content">
+             <div class=" col-md-12 col-lg-12 hidden-sm hidden-xs content">
                <h1>Disfruta del viaje <br>Eres el dueño de tu tiempo </h1>
-               <p class="lead">Viaja con <span><img src="assets/images/logoBlanco.png" alt="LabCar"></p> </span>
+               <p class="lead">Viaja con <span><img src="assets/images/logoBlanco.png" alt="LabCar"></span></p>
 
-               <input data-toggle="modal" data-target="#registro" type="button" class="btn btn-default btn-lg registrate" value="REGÍSTRATE">
+               <input data-toggle="modal" data-target="#registration" type="button" class="btn btn-default btn-lg registrate" value="REGÍSTRATE">
 
                <div class="col-md-12">
                  <p class="lead o-bien">o bien</p>
                </div>
                <br>
-               <input type="button" class="btn btn-default btn-lg conviertete" value="Conviértete en un conductor">
+               <input data-toggle="modal" data-target="#be-driver" type="button" class="btn btn-default btn-lg conviertete" value="Conviértete en un conductor">
              </div>
+             <div class="text-justify col-sm-12 col-xs-12 hidden-md hidden-lg content-mobile">
+               <h2>Comienza a viajar <br> con <span><img src="assets/images/logoBlanco.png" alt="LabCar"></span> </h2>
+               <button type="button" name="button" class="btn btn-default down-app"><strong>Descarga el app</strong></button>
+
+
+             </div>
+
          </div>
        </div>
      </section>
      <!-- inicio Modal registro-->
-        <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+     <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="head modal-header">
-                <button class="btn btn-default btn-registro center-block col-md-12" type="submit" data-toggle="modal" data-target="#registro">¿Ya tienes una cuenta?</button>
-                <p class="forgot center col-md-12">Ó CREA UNA CUENTA NUEVA</p>
+                <button class="btn btn-default btn-registro center-block col-md-12" type="submit" data-toggle="modal" data-target="#registration">¿Ya tienes una cuenta?</button>
+                <p class="text-center">Ó CREA UNA CUENTA NUEVA</p>
               </div>
               <div class="md-body modal-body">
-                <div class="  input-group col-md-12">
-                  <span class="input-group-addon" id="sizing-addon2"></span>
+                <div class="form-inline">
                   <input type="text" class="form-control" placeholder="Nombre" aria-describedby="sizing-addon2">
-                  <span class="input-group-addon" id="sizing-addon2"></span>
                   <input type="text" class="form-control" placeholder="Apellido" aria-describedby="sizing-addon2">
                 </div>
                 <div class=" input-group col-md-12">
-                  <span class="input-group-addon" id="sizing-addon2"></span>
-                  <input type="text" class="form-control" placeholder="youremail@mail.com" aria-describedby="sizing-addon2">
+                  <input type="text" class="form-control" placeholder="correo electronico: example@mail.com" aria-describedby="sizing-addon2">
                 </div>
-                <div class=" input-group col-md-12">
-                  <span class="input-group-addon" id="sizing-addon2"></span>
+                <div class="input-group col-md-12">
                   <input type="text" class="form-control" placeholder="Teléfono" aria-describedby="sizing-addon2">
                 </div>
-                <div class=" input-group col-md-12">
-                  <span class="input-group-addon" id="sizing-addon2"></span>
+                <div class="input-group col-md-12">
                   <input type="text" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2">
                 </div>
-                <div class=" input-group col-md-12">
-                  <span class="input-group-addon" id="sizing-addon2"></span>
+                <div class="input-group col-md-12">
                   <input type="text" class="form-control" placeholder="Ciudad" aria-describedby="sizing-addon2">
                 </div>
-                <div class=" input-group col-md-12">
-                  <span class="input-group-addon" id="sizing-addon2"></span>
+                <div class="input-group col-md-12">
                   <input type="text" class="form-control" placeholder="(Optional) Código de invitación" aria-describedby="sizing-addon2">
                 </div>
-                <div class=" input-group dropdown col-md-12">
-                  <button class=" forgot col-md-12 " id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">¿Cómo te enteraste de nosotros?
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu " aria-labelledby="dLabel">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Televisión</a></li>
-                    <li><a href="#">Instagram</a></li>
-                  </ul>
-                  <button class=" btn btn-default btn-enviar center-block col-md-12">ENVIAR</button>
-                </div>
               </div>
+              <div class="modal-footer">
+                <button class="col-md-12 like" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ¿Cómo te enteraste de nosotros?<i class="fa fa-chevron-down" aria-hidden="true"></i>
+
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Televisión</a></li>
+                  <li><a href="#">Diario</a></li>
+                </ul>
+                <button class="btn btn-default btn-enviar  col-md-12">ENVIAR</button>
+              </div>
+
+            </div>
+          </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+
+     <!-- inicio modal conviertete en un conductor  -->
+     <div class="modal fade" id="be-driver" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+           <div class="modal-dialog" role="document">
+             <div class="modal-content">
+               <div class="modal-body">
+                 <div class="form-group">
+                   <label for="sel1">¿Tienes vehiculo de 4 puertas?</label>
+                   <select class="form-control" id="sel1">
+                     <option value="">si</option>
+                     <option>no</option>
+                   </select>
+                 </div>
+                 <div class="form-group">
+                   <label for="sel1">¿Marca?</label>
+                   <select class="form-control" id="sel1">
+                     <option value="">Elige la marca del vehiculo</option>
+                     <option>etc</option>
+                   </select>
+                   <p><small>No ves tu vehiculo en la lista? Envia un correo electronico a <a href="#">blabla@lab-car.com</a></small></p>
+                 </div>
+                 <div class="form-group">
+                   <label for="sel1">Modelo</label>
+                   <select class="form-control" id="sel1">
+                     <option value="">modelo1</option>
+                     <option>modelo2</option>
+                   </select>
+                 </div>
+                 <div class="form-group">
+                   <label for="sel1">Año</label>
+                   <select class="form-control" id="sel1">
+                     <option value="">2017</option>
+                     <option>2016</option>
+                   </select>
+                 </div>
+                 <div class="form-group">
+                   <label for="sel1">Numero de matricula</label>
+                   <input type="text" class="form-control" placeholder="Numero de matricula" aria-describedby="sizing-addon2">
+                   <p>El numero de matricula ayuda a los clientes a identificar tu vehiculo</p>
+                 </div>
+               </div>
+               <div class="modal-footer">
+                 <button class="btn btn-default btn-enviar  col-md-12">ENVIAR</button>
+
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+    <section class="container-fluid download-slide">
+      <div class="row ">
+        <div class="borde col-md-10 col-lg-10 col-sm-10 col-xs-10">
+          <div class="row ">
+            <div class="col-xs-12 col-sm-12 hidden-md hidden-lg "><h2 class="text-center">La nueva app</h2></div>
+            <div class="col-md-5 col-lg-5 "><img class="center-block img-responsive" src=".\assets\images\iPhone6Plus.png" alt="">
+            </div>
+            <div class="col-md-5 col-lg-5  hidden-xs hidden-sm">
+              <h2>Descarga la nueva app</h2>
+              <p class="lead">La versión actualizada de LabCar está lleno de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+              <p class="lead">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente donde ir.</p>
             </div>
           </div>
-        </div>
-        <!-- fin modal registro-->
-     <!-- end of the first slide-->
-     <!-- download slide -->
-     <section class="container-fluid download-slide">
-
-       <div class="row ">
-         <div class="uno col-md-10 col-sm-12  col-xs-12">
-           <div class="row first-row ">
-             <div class="col-xs-12 col-sm-12 hidden-md hidden-lg "><h2>La nueva app</h2></div>
-              <div class="row ">
-                <div class="col-md-4 col-sm-12 col-xs-12"><img src=".\assets\images\iPhone6Plus.png" alt="">
-                </div>
-                <div class="col-md-6  hidden-xs hidden-sm">
-                 <h2>Descarga la nueva app</h2>
-                 <p class="lead">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-                 <p class="lead">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente donde ir.</p>
-                </div>
-              </div>
-            </div>
             <h3 class="col-xs-12 col-sm-12 hidden-md hidden-lg ">llega a tu destino aún más rápido</h3>
           </div>
           </div>
@@ -160,16 +206,16 @@
      <!-- third slide -->
     <section class="third-slide">
        <div class="row">
-         <div class="col-md-offset-8 col-md-4 col-sm-offset-3 col-sm-9 col-xs-offset-3 col-xs-9">
-             <div class=" col-md-12 driver">
+         <div class="col-md-offset-8 col-md-4  col-sm-9 col-xs-offset-3 col-xs-9">
+             <div class=" col-md-12 col-xs-12 col-sm-12 driver">
                <h2>Conduce cuando quieras </h2>
                <p class="lead">LabCar es una opción flexible para alcanzar tus metas financieras</p>
-               <input type="button" class="btn btn-default btn-lg btn-driver" value="Conviertete en conductor">
+               <input data-toggle="modal" data-target="#be-driver" type="button" class="btn btn-default btn-lg btn-driver" value="Conviertete en conductor">
              </div>
          </div>
        </div>
      </section>
-     <!-- end of the second slide-->
+     <!-- end of the third slide-->
      <!-- tariff slide -->
     <section class="tariff container container-fluid">
        <div class="row container">
@@ -181,15 +227,16 @@
                  <p class="lead">Consulta las tarifas LabCar aquí</p>
                </div>
                <div class="col-md-12">
-                 <img src="./assets/images/shape.png" class="ico" alt="">
+                 <img src="./assets/images/shape.png" class=" ico" alt="">
                  <input type="text" placeholder="Ingrese su punto de partida" class="input-lg start">
                </div>
                <div class="col-md-12">
-                 <img src="./assets/images/shape2.png" class="ico" alt="">
+                 <img src="./assets/images/shape2.png" class=" ico" alt="">
                  <input type="text" placeholder="Ingrese su destino" class="input-lg finish">
                </div>
                <div class="col-md-12">
-                 <input type="button" class="btn btn-default rute" value="¡TRAZAR RUTA!">
+                 <button type="button" class="btn btn-default" name="button">¡TRAZAR RUTA!</button>
+
                </div>
              </div>
              <div class=" map col-md-6 col-sm-12 col-xs-12">
@@ -206,7 +253,7 @@
       <div class="container">
         <div class="row">
           <div class="brand col-md-12">
-            <img src="assets/images/logoBlanco.png" alt="LabCar">
+            <img class="img-responsive" src="assets/images/logoBlanco.png" alt="LabCar">
           </div>
         </div>
         <div class="row">
@@ -242,8 +289,8 @@
             </ul>
           </div>
           <div class="list-down col-md-3 hidden-xs hidden-sm">
-            <a href="#"><img src="assets/images/appstore.png" alt=""></a>
-            <a href="#"><img src="assets/images/enBadgeWebGeneric.png" alt=""></a>
+            <a href="#"><img class="img-responsive" src="assets/images/appstore.png" alt=""></a>
+            <a href="#"><img class="img-responsive" src="assets/images/enBadgeWebGeneric.png" alt=""></a>
           </div>
           <!-- only mobile -->
           <div class="list-second hidden-lg hidden-md col-sm-6 col-xs-6">
@@ -253,18 +300,19 @@
             <a href="http://www.apple.com"><i class="fa fa-apple" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
             <div id="img-list">
-              <a href="#"><img src="assets/images/appstore.png" alt=""></a>
-              <a href="#"><img src="assets/images/enBadgeWebGeneric.png" alt=""></a>
+              <a href="#"><img class="img-responsive" src="assets/images/appstore.png" alt=""></a>
+              <a href="#"><img class="img-responsive" src="assets/images/enBadgeWebGeneric.png" alt=""></a>
             </div>
 
           </div>
         </div>
-        <p>© 2017 LabCar technologies Inc.</p>
+        <p class="text-center">© 2017 LabCar technologies Inc.</p>
       </div>
      </footer>
 
-    <script src="https://use.fontawesome.com/4db2d1a00b.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/4db2d1a00b.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>

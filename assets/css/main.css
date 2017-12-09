@@ -8,6 +8,10 @@ body{
   padding: 3% 0;
   background-color: white;
 }
+.left{
+  float: left;
+  margin: -2% 0;
+}
 h2{
   font-weight: bold;
 }
@@ -28,6 +32,28 @@ h2{
   padding-bottom: 15%;
 
 }
+@media (max-width:768px) {
+  .first-slide{
+    background-image: url(../images/taxi.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-position: 70% 92%;
+    padding-top: 45%;
+    padding-bottom: 45%;
+
+  }
+}
+
+.content-mobile{
+  background-color: #F7B617FF;
+  color: #fff;
+
+  margin-top: 15%;
+  padding: 2% 15% 4%;
+  margin-top: 15%;
+  line-height: 4;
+}
 .o-bien::after, .o-bien::before{
   content: " ";
   display: inline-block;
@@ -39,25 +65,28 @@ h2{
   margin-right: 10%;
 }
 .download-slide{
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-.download-slide .first-row{
-  border: 1px solid white;
   padding: 5% 0;
+}
+.borde{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+@media (max-width:768px) {
+  .borde{
+    border: 1px solid white;
+    margin: 5%;
+  }
 }
 .third-slide{
   background-image: url(../images/conduce.jpg);
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-
-
 }
 .driver{
   background-color: rgba(0,0,0,0.6);
   padding: 25% 10%;
-
 }
 .btn-driver{
   background-color: #F7B617FF;
@@ -67,6 +96,23 @@ h2{
 .tariff{
   padding: 7% 0;
 }
+.tariff input{
+  border: 1px solid white;
+  border-radius: 5px;
+  line-height: 3.5;
+  background-color: transparent;
+  padding-left: 2%;
+  padding-right: 7%;
+  margin-bottom: 4%;
+
+}
+.tariff input::-webkit-input-placeholder {
+  color: white;
+}
+.tariff button{
+  font-weight: bold;
+  margin-bottom: 20%;
+}
 .map{
   border: 1px solid white;
   text-align: center;
@@ -75,6 +121,7 @@ h2{
 footer{
   background-color: #2B2B2B;
   padding: 5% 0;
+
 }
 footer .row{
   border-bottom: 1px solid white;
@@ -99,6 +146,56 @@ footer .row{
 .forgot{
   color:black;
 }
-.center{
-  text-align: center;
+#log-in .modal-content{
+  background-color: #08AC9D;
+}
+#log-in .modal-footer{
+  padding: 5% 15%;
+
+}
+#log-in .body-footer{
+  background-color: #F5F5F5;
+  padding-top: 5%;
+}
+#log-in .input-group{
+  margin-bottom: 5%;
+}
+#log-in button{
+  margin-bottom: 5%;
+}
+#registration .modal-content{
+  background-color: #A9A9A9;
+}
+
+#registration .input-group{
+  margin-bottom: 2%;
+}
+#registration .form-inline input{
+  width: 49%;
+  margin-bottom: 2%;
+}
+#registration .input-group {
+  padding-right: 1%;
+}
+.btn-registro{
+  background-color: black;
+  color: white;
+}
+#registration p{
+  color: black;
+}
+#dLabel{
+  background-color: #DDDDDD;
+  color: black;
+  font-weight: bold;
+}
+.btn-enviar{
+  background-color: #5BC0DE;
+  color: white;
+}
+#be-driver .modal-content{
+  background-color: #A9A9A9;
+  padding: 5%;
+  color: #4F463C;
+  width: 80%;
 }
